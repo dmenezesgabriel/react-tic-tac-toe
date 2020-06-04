@@ -1,6 +1,8 @@
 # My Hello World React!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First of all, let's play some Tic Tac Toe => https://dmenezesgabriel.github.io/react-tic-tac-toe/
+
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-ap-p).
 
 ## Available Scripts
 
