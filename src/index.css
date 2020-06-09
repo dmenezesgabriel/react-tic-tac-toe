@@ -3,6 +3,12 @@ body {
   margin: 20px;
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 ol, ul {
   padding-left: 30px;
 }
@@ -19,17 +25,17 @@ ol, ul {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 0.5px solid #999;
   float: left;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
 }
 
 .square:focus {

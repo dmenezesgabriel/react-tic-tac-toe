@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "bootstrap/dist/css/bootstrap.css";
 import './index.css';
 
 function Square(props) {
@@ -51,24 +52,33 @@ class Board extends React.Component {
     }
 
     return (
-      <div>
-        <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="card">
+                <div className="card-body">
+                  <div className="card-header text-center">
+                    <div className="status font-weight-bold text-primary">{status}</div>
+                  </div>
+                  <div className="board-row">
+                    {this.renderSquare(0)}
+                    {this.renderSquare(1)}
+                    {this.renderSquare(2)}
+                  </div>
+                  <div className="board-row">
+                    {this.renderSquare(3)}
+                    {this.renderSquare(4)}
+                    {this.renderSquare(5)}
+                  </div>
+                  <div className="board-row">
+                    {this.renderSquare(6)}
+                    {this.renderSquare(7)}
+                    {this.renderSquare(8)}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
     );
   }
 }
@@ -77,7 +87,7 @@ class Game extends React.Component {
   render() {
     return (
       <div className="game">
-        <div className="game-board">
+        <div className="game-board jumbotron text-center m-auto">
           <Board />
         </div>
         <div className="game-info">
