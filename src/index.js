@@ -5,9 +5,11 @@ import './index.css';
 
 function Square(props) {
   return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
-    </button>
+    <div className="col-sm m-0 p-0">
+      <button className="square" onClick={props.onClick}>
+        {props.value}
+      </button>
+    </div>
   );
 }
 
@@ -59,17 +61,17 @@ class Board extends React.Component {
                   <div className="card-header text-center">
                     <div className="status font-weight-bold text-primary">{status}</div>
                   </div>
-                  <div className="board-row">
+                  <div className="row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
                     {this.renderSquare(2)}
                   </div>
-                  <div className="board-row">
+                  <div className="row">
                     {this.renderSquare(3)}
                     {this.renderSquare(4)}
                     {this.renderSquare(5)}
                   </div>
-                  <div className="board-row">
+                  <div className="row">
                     {this.renderSquare(6)}
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
